@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMOGRAPHY | FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form-validation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">FOMOGRAPHY</a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="testimonianze.html">Testimonianze</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="login.html" class="btn-login">Accedi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Domande Frequenti</h1>
+                <p>Risposte alle domande più comuni sui nostri servizi fotografici</p>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="faq-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="general">Generali</button>
+                    <button class="category-tab" data-category="wedding">Matrimoni</button>
+                    <button class="category-tab" data-category="portrait">Ritratti</button>
+                    <button class="category-tab" data-category="commercial">Commerciale</button>
+                    <button class="category-tab" data-category="booking">Prenotazioni</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="faq-accordion">
+            <div class="container">
+                <!-- General FAQs -->
+                <div class="faq-category active" id="general">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Quali sono i vostri orari di lavoro?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Il nostro studio è aperto dal lunedì al venerdì dalle 9:00 alle 18:00. I servizi fotografici possono essere prenotati anche nei weekend in base alla disponibilità.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Quanto in anticipo devo prenotare un servizio?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Consigliamo di prenotare con almeno 2-4 settimane di anticipo per i servizi standard. Per i matrimoni, è consigliabile prenotare 6-12 mesi prima della data.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Quali metodi di pagamento accettate?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Accettiamo pagamenti tramite bonifico bancario, carte di credito/debito e PayPal. Per i servizi più grandi, offriamo anche piani di pagamento rateizzati.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Quanto tempo ci vuole per ricevere le foto?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>I tempi di consegna variano in base al tipo di servizio. In generale, le foto digitali vengono consegnate entro 1-2 settimane, mentre gli album fisici richiedono 3-4 settimane aggiuntive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding FAQs -->
+                <div class="faq-category" id="wedding">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Offrite pacchetti personalizzati per i matrimoni?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sì, tutti i nostri pacchetti matrimoniali possono essere personalizzati in base alle vostre esigenze specifiche. Offriamo opzioni aggiuntive come secondo fotografo, album extra, sessioni pre-matrimonio, ecc.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Avete esperienza con matrimoni in location particolari?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Abbiamo esperienza con matrimoni in vari tipi di location: spiagge, montagne, ville storiche, chiese, location all'aperto e al chiuso. Ci adattiamo a qualsiasi ambiente per catturare al meglio il vostro giorno speciale.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>È possibile avere un incontro preliminare?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Assolutamente sì. Anzi, lo raccomandiamo. Un incontro preliminare ci permette di conoscerci, discutere le vostre aspettative e pianificare al meglio il servizio fotografico del vostro matrimonio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait FAQs -->
+                <div class="faq-category" id="portrait">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Cosa dovrei indossare per un servizio di ritratti?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Consigliamo abiti in cui vi sentite a vostro agio e che riflettono il vostro stile personale. È meglio evitare stampe troppo elaborate o loghi vistosi. Vi forniremo una guida dettagliata prima della sessione.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Posso cambiare outfit durante la sessione?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sì, nei nostri pacchetti standard sono inclusi 2-3 cambi d'abito. Se desiderate più cambi, fatecelo sapere in anticipo per pianificare adeguatamente il tempo della sessione.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Offrite servizi di trucco e parrucco?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Possiamo organizzare servizi professionali di trucco e parrucco come opzione aggiuntiva. Collaboriamo con truccatori e parrucchieri esperti che possono preparare il vostro look prima della sessione fotografica.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial FAQs -->
+                <div class="faq-category" id="commercial">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Quali diritti ho sulle immagini commerciali?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Per i progetti commerciali, offriamo licenze di utilizzo personalizzate in base alle vostre esigenze. Generalmente, le licenze includono l'uso sui vostri canali di marketing, sito web e materiali promozionali.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Posso richiedere modifiche specifiche alle immagini?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Assolutamente. Per i progetti commerciali, lavoriamo a stretto contatto con i clienti per garantire che le immagini soddisfino esattamente le loro esigenze. Sono incluse revisioni e modifiche ragionevoli.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Offrite servizi di fotografia per e-commerce?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sì, offriamo servizi specializzati per e-commerce con tariffe a volume. Possiamo fotografare grandi quantità di prodotti con stile coerente, sfondi personalizzati e specifiche tecniche precise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking FAQs -->
+                <div class="faq-category" id="booking">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Come posso prenotare un servizio?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Potete prenotare un servizio contattandoci via email a info@fomography.it o telefonicamente al +39 02 1234567. Dopo un colloquio iniziale, vi invieremo un preventivo dettagliato e un contratto.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>È richiesto un acconto per la prenotazione?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sì, per confermare la prenotazione richiediamo un acconto del 30% del totale. Il saldo restante può essere pagato prima o il giorno del servizio, a seconda del tipo di progetto.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Qual è la vostra politica di cancellazione?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Se cancellate con più di 30 giorni di anticipo, l'acconto può essere rimborsato o utilizzato per una futura prenotazione. Per cancellazioni con meno di 30 giorni di preavviso, l'acconto non è rimborsabile ma può essere utilizzato per riprogrammare entro 6 mesi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ask a Question -->
+        <section class="ask-question">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Non hai trovato la risposta?</h2>
+                    <div class="separator"></div>
+                    <p>Inviaci la tua domanda e ti risponderemo al più presto</p>
+                </div>
+                <form id="questionForm" class="question-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" minlength="2" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="question">La tua domanda</label>
+                        <textarea id="question" name="question" rows="4" minlength="10" maxlength="500" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Invia Domanda</button>
+                </form>
+                <div id="questionMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>FOMOGRAPHY</h3>
+                    <p>Catturiamo momenti, creiamo ricordi</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servizi.html">Servizi</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="testimonianze.html">Testimonianze</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contatti</h4>
+                    <p>Via della Fotografia 123, Milano</p>
+                    <p>Email: info@fomography.it</p>
+                    <p>Tel: +39 02 1234567</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FOMOGRAPHY. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+</html>

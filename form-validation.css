@@ -1,0 +1,437 @@
+/* Stili per la validazione dei form */
+
+/* Stati dei campi */
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+.form-group input.success,
+.form-group textarea.success,
+.form-group select.success {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+/* Messaggi di errore */
+.field-error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: rgba(220, 53, 69, 0.1);
+  border-left: 3px solid #dc3545;
+  border-radius: 0 4px 4px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.field-error.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Icone di validazione */
+.form-group {
+  position: relative;
+}
+
+.form-group input.success::after,
+.form-group textarea.success::after {
+  content: "✓";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #28a745;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.form-group input.error::after,
+.form-group textarea.error::after {
+  content: "✗";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #dc3545;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Password Strength Meter */
+.password-strength-meter {
+  margin-top: 10px;
+}
+
+.strength-bar {
+  height: 6px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.strength-bar.strength-weak {
+  background-color: #dc3545;
+}
+
+.strength-bar.strength-medium {
+  background-color: #ffc107;
+}
+
+.strength-bar.strength-strong {
+  background-color: #17a2b8;
+}
+
+.strength-bar.strength-very-strong {
+  background-color: #28a745;
+}
+
+.strength-text {
+  font-size: 12px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Rating Stars */
+.rating-select {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 24px;
+  color: var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.star:hover,
+.star.hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+.star.active {
+  color: var(--accent-color);
+}
+
+/* Form Tabs */
+.form-tabs {
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.form-tab {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: var(--transition);
+  position: relative;
+}
+
+.form-tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.form-tab.active {
+  color: var(--accent-color);
+}
+
+.form-tab.active::after {
+  width: 100%;
+}
+
+.form-tab:hover {
+  color: var(--accent-color);
+  background-color: rgba(212, 175, 55, 0.05);
+}
+
+/* Auth Forms */
+.auth-form {
+  display: none;
+  animation: fadeInUp 0.5s ease;
+}
+
+.auth-form.active {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Password Toggle */
+.password-toggle {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle input[type="checkbox"] {
+  margin-right: 8px;
+  width: auto;
+}
+
+.password-toggle label {
+  font-size: 14px;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+/* Social Login */
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-login p {
+  margin-bottom: 15px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.social-login p::before,
+.social-login p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.social-login p::before {
+  left: 0;
+}
+
+.social-login p::after {
+  right: 0;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.social-btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--accent-color);
+}
+
+.social-btn.google:hover {
+  background-color: #4285f4;
+  color: white;
+  border-color: #4285f4;
+}
+
+.social-btn.facebook:hover {
+  background-color: #1877f2;
+  color: white;
+  border-color: #1877f2;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+  transition: all 0.3s ease;
+}
+
+.accordion-item.active .accordion-header {
+  background-color: var(--secondary-color);
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+  color: var(--primary-color);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 300px;
+}
+
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.category-tab {
+  padding: 10px 20px;
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 14px;
+  color: var(--text-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-tab::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.category-tab:hover::before,
+.category-tab.active::before {
+  left: 0;
+}
+
+.category-tab:hover,
+.category-tab.active {
+  color: var(--bg-color);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Loading States */
+.form-loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.form-loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-loading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-top: 2px solid var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .category-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-tab {
+    width: 200px;
+    text-align: center;
+  }
+
+  .form-tabs {
+    flex-direction: column;
+  }
+
+  .form-tab {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .form-tab:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .rating-select {
+    justify-content: center;
+  }
+
+  .star {
+    font-size: 20px;
+  }
+
+  .password-strength-meter {
+    margin-top: 8px;
+  }
+
+  .strength-bar {
+    height: 4px;
+  }
+
+  .field-error {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+}

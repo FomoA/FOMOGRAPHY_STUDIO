@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMOGRAPHY | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form-validation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span>FOMOGRAPHY</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">FOMOGRAPHY</a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="testimonianze.html">Testimonianze</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="login.html" class="btn-login">Accedi</a></li>
+                    <li class="theme-toggle-wrapper">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambia tema">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1592898693242-8adc8b2d94e5?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfH3Dsx8fGVufDB8fHx8fA%3D%')">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-on-scroll">Catturiamo i tuoi momenti più preziosi</h1>
+                    <p class="animate-on-scroll">Fotografia professionale per eventi, ritratti e matrimoni</p>
+                    <a href="servizi.html" class="btn animate-on-scroll">Scopri i nostri servizi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Chi Siamo</h2>
+                    <div class="separator animate-on-scroll"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <p>FOMOGRAPHY è uno studio fotografico specializzato nella cattura di momenti autentici e significativi. Con un approccio minimalista e un occhio attento ai dettagli, trasformiamo istanti ordinari in ricordi straordinari.</p>
+                        <p>Fondata nel 2018, la nostra missione è creare immagini che raccontino storie e preservino emozioni per le generazioni future.</p>
+                        <a href="portfolio.html" class="btn btn-outline">Esplora il nostro lavoro</a>
+                    </div>
+                    <div class="about-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Fotografo al lavoro">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services -->
+        <section class="featured-services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">I Nostri Servizi</h2>
+                    <div class="separator animate-on-scroll"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Matrimoni</h3>
+                        <p>Catturiamo ogni momento speciale del vostro grande giorno.</p>
+                        <a href="servizi.html" class="service-link">Scopri di più <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Ritratti</h3>
+                        <p>Ritratti professionali che catturano la vera essenza.</p>
+                        <a href="servizi.html" class="service-link">Scopri di più <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Eventi</h3>
+                        <p>Documentazione completa di eventi aziendali e privati.</p>
+                        <a href="servizi.html" class="service-link">Scopri di più <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="services-cta">
+                    <a href="servizi.html" class="btn animate-on-scroll">Tutti i servizi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work -->
+        <section class="featured-work">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Lavori Recenti</h2>
+                    <div class="separator animate-on-scroll"></div>
+                </div>
+                <div class="work-grid">
+                    <div class="work-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Matrimonio">
+                        <div class="work-overlay">
+                            <h3>Matrimonio di Sara e Marco</h3>
+                            <p>Lago di Como, Giugno 2024</p>
+                            <a href="portfolio.html" class="btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                    <div class="work-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ritratto aziendale">
+                        <div class="work-overlay">
+                            <h3>Ritratti aziendali Tech Inc.</h3>
+                            <p>Milano, Maggio 2024</p>
+                            <a href="portfolio.html" class="btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                    <div class="work-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Evento aziendale">
+                        <div class="work-overlay">
+                            <h3>Conferenza annuale StartUp Italia</h3>
+                            <p>Roma, Aprile 2024</p>
+                            <a href="portfolio.html" class="btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                    <div class="work-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Servizio fotografico famiglia">
+                        <div class="work-overlay">
+                            <h3>Famiglia Rossi - Servizio estivo</h3>
+                            <p>Toscana, Luglio 2024</p>
+                            <a href="portfolio.html" class="btn-small">Vedi progetto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-cta">
+                    <a href="portfolio.html" class="btn animate-on-scroll">Vedi tutto il portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Preview -->
+        <section class="testimonial-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Cosa Dicono i Nostri Clienti</h2>
+                    <div class="separator animate-on-scroll"></div>
+                </div>
+                <div class="testimonial-slider animate-on-scroll">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>FOMOGRAPHY ha catturato il nostro matrimonio in modo straordinario. Le foto sono autentiche, emotive e raccontano perfettamente la storia del nostro giorno speciale.</p>
+                            <div class="client-info">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Cliente" class="client-image">
+                                <div>
+                                    <h4>Marco e Giulia Bianchi</h4>
+                                    <p>Matrimonio, Giugno 2024</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>Il servizio fotografico aziendale ha superato le nostre aspettative. Professionalità impeccabile e risultati che hanno elevato l'immagine della nostra azienda.</p>
+                            <div class="client-info">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Cliente" class="client-image">
+                                <div>
+                                    <h4>Laura Verdi</h4>
+                                    <p>Direttore Marketing, Tech Solutions</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>I ritratti di famiglia sono semplicemente perfetti. Hanno catturato la personalità di ogni membro della famiglia in modo naturale e autentico.</p>
+                            <div class="client-info">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Cliente" class="client-image">
+                                <div>
+                                    <h4>Famiglia Rossi</h4>
+                                    <p>Servizio fotografico familiare</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="testimonial-cta">
+                    <a href="testimonianze.html" class="btn btn-outline animate-on-scroll">Leggi tutte le testimonianze</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="stat-number" data-count="1500">0</div>
+                        <div class="stat-label">Servizi Fotografici</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-count="850">0</div>
+                        <div class="stat-label">Clienti Soddisfatti</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Premi Vinti</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-number" data-count="6">0</div>
+                        <div class="stat-label">Anni di Esperienza</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="section-header">
+                        <h2 class="animate-on-scroll">Resta Aggiornato</h2>
+                        <div class="separator animate-on-scroll"></div>
+                        <p class="animate-on-scroll">Iscriviti alla nostra newsletter per ricevere aggiornamenti, offerte speciali e consigli fotografici</p>
+                    </div>
+                    <form id="newsletterForm" class="newsletter-form animate-on-scroll">
+                        <div class="form-group">
+                            <input type="email" id="newsletterEmail" name="email" placeholder="Il tuo indirizzo email" required>
+                            <button type="submit" class="btn">Iscriviti</button>
+                        </div>
+                        <div id="newsletterMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <h2 class="animate-on-scroll">Pronto a catturare i tuoi momenti speciali?</h2>
+                <p class="animate-on-scroll">Contattaci oggi per discutere del tuo progetto fotografico</p>
+                <a href="mailto:info@fomography.it" class="btn animate-on-scroll">Contattaci</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>FOMOGRAPHY</h3>
+                    <p>Catturiamo momenti, creiamo ricordi</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servizi.html">Servizi</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="testimonianze.html">Testimonianze</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Via della Fotografia 123, Milano</p>
+                    <p><i class="fas fa-envelope"></i> info@fomography.it</p>
+                    <p><i class="fas fa-phone"></i> +39 02 1234567</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FOMOGRAPHY. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Torna in cima">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. <a href="#">Leggi la nostra policy sui cookie</a>.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-small">Accetta</button>
+                <button id="declineCookies" class="btn btn-small btn-outline">Rifiuta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+</html>

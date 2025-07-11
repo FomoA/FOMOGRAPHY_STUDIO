@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMOGRAPHY | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span>FOMOGRAPHY</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">FOMOGRAPHY</a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="testimonianze.html">Testimonianze</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="login.html" class="btn-login">Accedi</a></li>
+                    <li class="theme-toggle-wrapper">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambia tema">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="animate-on-scroll">Il Nostro Portfolio</h1>
+                <p class="animate-on-scroll">Una selezione dei nostri migliori lavori fotografici</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-buttons animate-on-scroll">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> Tutti
+                    </button>
+                    <button class="filter-btn" data-filter="matrimoni">
+                        <i class="fas fa-heart"></i> Matrimoni
+                    </button>
+                    <button class="filter-btn" data-filter="ritratti">
+                        <i class="fas fa-user"></i> Ritratti
+                    </button>
+                    <button class="filter-btn" data-filter="eventi">
+                        <i class="fas fa-calendar-alt"></i> Eventi
+                    </button>
+                    <button class="filter-btn" data-filter="commerciale">
+                        <i class="fas fa-briefcase"></i> Commerciale
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item matrimoni animate-on-scroll" data-category="matrimoni">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Matrimonio Bianchi">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Matrimonio Bianchi</h3>
+                                    <p>Lago di Como, 2024</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Matrimonio Bianchi - Lago di Como, 2024">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item ritratti animate-on-scroll" data-category="ritratti">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ritratto Esecutivo">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Ritratto Esecutivo</h3>
+                                    <p>CEO Tech Solutions</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Ritratto Esecutivo - CEO Tech Solutions">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item eventi animate-on-scroll" data-category="eventi">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Conferenza Annuale">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Conferenza Annuale</h3>
+                                    <p>StartUp Italia 2024</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Conferenza Annuale - StartUp Italia 2024">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item commerciale animate-on-scroll" data-category="commerciale">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Campagna Prodotto">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Campagna Prodotto</h3>
+                                    <p>Linea Accessori Moda</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1556760544-74068565f05c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Campagna Prodotto - Linea Accessori Moda">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item matrimoni animate-on-scroll" data-category="matrimoni">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Matrimonio Rossi">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Matrimonio Rossi</h3>
+                                    <p>Toscana, 2023</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Matrimonio Rossi - Toscana, 2023">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item ritratti animate-on-scroll" data-category="ritratti">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ritratti Famiglia">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Ritratti Famiglia</h3>
+                                    <p>Famiglia Verdi</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Ritratti Famiglia - Famiglia Verdi">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item eventi animate-on-scroll" data-category="eventi">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lancio Prodotto">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Lancio Prodotto</h3>
+                                    <p>Tech Innovations 2024</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Lancio Prodotto - Tech Innovations 2024">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item commerciale animate-on-scroll" data-category="commerciale">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Food Photography">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Food Photography</h3>
+                                    <p>Ristorante Stella</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Food Photography - Ristorante Stella">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item matrimoni animate-on-scroll" data-category="matrimoni">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Matrimonio Esposito">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Matrimonio Esposito</h3>
+                                    <p>Costiera Amalfitana, 2024</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Matrimonio Esposito - Costiera Amalfitana, 2024">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item ritratti animate-on-scroll" data-category="ritratti">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ritratto Artistico">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Ritratto Artistico</h3>
+                                    <p>Serie "Espressioni"</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Ritratto Artistico - Serie 'Espressioni'">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item eventi animate-on-scroll" data-category="eventi">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Gala Beneficenza">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Gala Beneficenza</h3>
+                                    <p>Fondazione Aiuto, 2023</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Gala Beneficenza - Fondazione Aiuto, 2023">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item commerciale animate-on-scroll" data-category="commerciale">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Interior Design">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Interior Design</h3>
+                                    <p>Hotel Panorama</p>
+                                    <div class="gallery-actions">
+                                        <button class="view-image" data-src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" data-title="Interior Design - Hotel Panorama">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        <a href="#" class="gallery-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- No Results Message -->
+        <div class="no-results-message" id="noResultsMessage">
+            <i class="fas fa-search"></i>
+            <h3>Nessun risultato trovato</h3>
+            <p>Prova a selezionare una categoria diversa</p>
+        </div>
+
+        <!-- Advanced Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <button class="close-lightbox" aria-label="Chiudi">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="prev-image" aria-label="Immagine precedente">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="lightbox-image-container">
+                    <img id="lightbox-img" src="/placeholder.svg" alt="Immagine lightbox">
+                </div>
+                <button class="next-image" aria-label="Immagine successiva">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+                <div class="lightbox-counter" id="lightbox-counter"></div>
+            </div>
+        </div>
+
+        <!-- Portfolio Categories -->
+        <section class="portfolio-categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-on-scroll">Esplora per Categoria</h2>
+                    <div class="separator animate-on-scroll"></div>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card animate-on-scroll">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Matrimoni">
+                            <div class="category-overlay">
+                                <a href="#" class="btn btn-small" data-filter="matrimoni">Esplora</a>
+                            </div>
+                        </div>
+                        <div class="category-info">
+                            <h3>Matrimoni</h3>
+                            <p>Catturiamo ogni momento del vostro giorno speciale</p>
+                        </div>
+                    </div>
+                    <div class="category-card animate-on-scroll">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ritratti">
+                            <div class="category-overlay">
+                                <a href="#" class="btn btn-small" data-filter="ritratti">Esplora</a>
+                            </div>
+                        </div>
+                        <div class="category-info">
+                            <h3>Ritratti</h3>
+                            <p>Ritratti che catturano la vera essenza</p>
+                        </div>
+                    </div>
+                    <div class="category-card animate-on-scroll">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Eventi">
+                            <div class="category-overlay">
+                                <a href="#" class="btn btn-small" data-filter="eventi">Esplora</a>
+                            </div>
+                        </div>
+                        <div class="category-info">
+                            <h3>Eventi</h3>
+                            <p>Documentazione completa di eventi speciali</p>
+                        </div>
+                    </div>
+                    <div class="category-card animate-on-scroll">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Commerciale">
+                            <div class="category-overlay">
+                                <a href="#" class="btn btn-small" data-filter="commerciale">Esplora</a>
+                            </div>
+                        </div>
+                        <div class="category-info">
+                            <h3>Commerciale</h3>
+                            <p>Fotografia professionale per il tuo business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <div class="container">
+                <h2 class="animate-on-scroll">Ti piace il nostro lavoro?</h2>
+                <p class="animate-on-scroll">Contattaci per discutere del tuo prossimo progetto fotografico</p>
+                <a href="mailto:info@fomography.it" class="btn animate-on-scroll">Contattaci</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>FOMOGRAPHY</h3>
+                    <p>Catturiamo momenti, creiamo ricordi</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servizi.html">Servizi</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="testimonianze.html">Testimonianze</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Via della Fotografia 123, Milano</p>
+                    <p><i class="fas fa-envelope"></i> info@fomography.it</p>
+                    <p><i class="fas fa-phone"></i> +39 02 1234567</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FOMOGRAPHY. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Torna in cima">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito. <a href="#">Leggi la nostra policy sui cookie</a>.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-small">Accetta</button>
+                <button id="declineCookies" class="btn btn-small btn-outline">Rifiuta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
